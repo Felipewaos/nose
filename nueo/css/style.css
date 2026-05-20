@@ -1,0 +1,485 @@
+/* Reseteo y Configuración Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-principal: #121212;
+    --bg-secundario: #1a1a1a;
+    --amarillo-helldiver: #FFE600;
+    --texto-claro: #f5f5f5;
+    --texto-oscuro: #aaaaaa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto-claro);
+    line-height: 1.6;
+}
+
+/* Header y Navegación */
+.main-header {
+    background-color: var(--bg-secundario);
+    border-bottom: 3px solid var(--amarillo-helldiver);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.highlight {
+    color: var(--amarillo-helldiver);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: var(--amarillo-helldiver);
+}
+
+/* Sección Hero / Inicio */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://placehold.co/1920x1080/1a1a1a/FFE600?text=SUPER+TIERRA') no-repeat center center/cover;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: var(--amarillo-helldiver);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--texto-claro);
+}
+
+.btn-cta {
+    background-color: var(--amarillo-helldiver);
+    color: #000;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    background-color: #e6ce00;
+    transform: scale(1.05);
+}
+
+/* Sección Facciones */
+.facciones-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-principal);
+}
+
+.facciones-section h2 {
+    font-size: 2.5rem;
+    color: var(--amarillo-helldiver);
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.facciones-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faccion-card {
+    background-color: var(--bg-secundario);
+    border: 2px solid var(--amarillo-helldiver);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faccion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px var(--amarillo-helldiver);
+}
+
+.faccion-imagen {
+    width: 100%;
+    height: 250px;
+    background-color: #2a2a2a;
+    border-bottom: 2px solid var(--amarillo-helldiver);
+}
+
+.faccion-card h3 {
+    color: var(--amarillo-helldiver);
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+.faccion-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--texto-oscuro);
+    font-size: 0.95rem;
+}
+
+/* Sección Estratagemas */
+.estratagemas-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-secundario);
+}
+
+.estratagemas-section h2 {
+    font-size: 2.5rem;
+    color: var(--amarillo-helldiver);
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.estratagemas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.estratagema-card {
+    background-color: var(--bg-principal);
+    border-left: 4px solid var(--amarillo-helldiver);
+    padding: 2rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.estratagema-card:hover {
+    background-color: #1a1a2a;
+}
+
+.estratagema-card h3 {
+    color: var(--amarillo-helldiver);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.estratagema-card p {
+    color: var(--texto-oscuro);
+    font-size: 0.95rem;
+}
+
+/* Sección Contacto */
+.contacto-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-principal);
+    text-align: center;
+    border-top: 3px solid var(--amarillo-helldiver);
+}
+
+.contacto-section h2 {
+    font-size: 2.5rem;
+    color: var(--amarillo-helldiver);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contacto-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--texto-claro);
+}
+
+.btn-steam {
+    background-color: var(--amarillo-helldiver);
+    color: #000;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-steam:hover {
+    background-color: #e6ce00;
+    transform: scale(1.05);
+}
+
+/* Sección Consejos Veteranos */
+.consejos-veteranos-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-principal);
+}
+
+.consejos-veteranos-section h2 {
+    font-size: 2.5rem;
+    color: var(--amarillo-helldiver);
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.consejos-veteranos-section > p {
+    font-size: 1rem;
+    color: var(--texto-oscuro);
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+}
+
+.filtros-busqueda {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    align-items: center;
+}
+
+.filtros {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filtro-btn {
+    background-color: var(--bg-secundario);
+    color: var(--texto-oscuro);
+    border: 2px solid var(--texto-oscuro);
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.filtro-btn:hover {
+    border-color: var(--amarillo-helldiver);
+    color: var(--amarillo-helldiver);
+}
+
+.filtro-btn.active {
+    background-color: var(--amarillo-helldiver);
+    color: #000;
+    border-color: var(--amarillo-helldiver);
+}
+
+.buscador-texto {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--bg-secundario);
+    color: var(--texto-claro);
+    border: 2px solid var(--amarillo-helldiver);
+    border-radius: 4px;
+    font-size: 1rem;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+}
+
+.buscador-texto:focus {
+    outline: none;
+    box-shadow: 0 0 15px var(--amarillo-helldiver);
+}
+
+.buscador-texto::placeholder {
+    color: var(--texto-oscuro);
+}
+
+.consejos-cajita {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.consejo-item {
+    background-color: var(--bg-secundario);
+    border-left: 4px solid var(--amarillo-helldiver);
+    padding: 2rem;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.consejo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.2);
+}
+
+.consejo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.consejo-header h4 {
+    color: var(--amarillo-helldiver);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.consejo-autor {
+    color: var(--texto-oscuro);
+    font-size: 0.9rem;
+}
+
+.favorite-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    color: var(--texto-oscuro);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 0;
+}
+
+.favorite-btn:hover {
+    color: var(--amarillo-helldiver);
+    transform: scale(1.2);
+}
+
+.favorite-btn.favorito-activo {
+    color: var(--amarillo-helldiver);
+}
+
+.favorite-counter {
+    color: var(--texto-oscuro);
+    font-size: 0.9rem;
+    min-width: 20px;
+}
+
+.consejo-faccion {
+    color: var(--amarillo-helldiver);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.consejo-contenido {
+    color: var(--texto-claro);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.sin-consejos {
+    text-align: center;
+    color: var(--texto-oscuro);
+    font-size: 1.1rem;
+    padding: 2rem;
+    grid-column: 1 / -1;
+}
+
+.agregar-consejo-form {
+    background-color: var(--bg-secundario);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid var(--amarillo-helldiver);
+}
+
+.agregar-consejo-form h3 {
+    color: var(--amarillo-helldiver);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: var(--texto-claro);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--bg-principal);
+    color: var(--texto-claro);
+    border: 1px solid var(--texto-oscuro);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--amarillo-helldiver);
+    box-shadow: 0 0 10px rgba(255, 230, 0, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.agregar-consejo-form .btn-cta {
+    width: 100%;
+    text-align: center;
+}

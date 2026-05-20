@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helldivers 2 - Alístate por la Democracia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header class="main-header">
+        <div class="logoContainer">
+            <h1>HELLDIVERS <span class="highlight">2</span></h1>
+        </div>
+  
+        <!-- Menú de Navegación -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#facciones">Facciones</a></li>
+                <li><a href="#estratagemas">Estratagemas</a></li>
+                <li><a href="#contacto">Alistamiento</a></li>
+                <li><a href="#consejos_veteranos">Consejos in game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h2 class="highlight">¿TIENES LO NECESARIO PARA SER LIBRE?</h2>
+            <p>Únete a las fuerzas de élite de la Súper Tierra. Enfréntate a las amenazas alienígenas más letales y expande la Democracia Tutelada por toda la galaxia. La galaxia te necesita, recluta.</p>
+            <button class="btn-cta" onclick="window.open('https://store.steampowered.com/agecheck/app/553850/', '_blank')">¡ALÍSTATE HOY MISMO!</button>
+        </div>
+    </section>
+
+        <section id="facciones" class="facciones-section">
+            <h2>Facciones Principales</h2>
+            <div class="facciones-container">
+                <div class="faccion-card">
+                    <div class="faccion-imagen" style="background-image: url('img/download.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>Terminidos</h3>
+                    <p>Insectoides gigantes y despiadados que amenazan la expansión de la Democracia. Son la amenaza más antigua y constante para la humanidad.</p>
+                </div>
+                <div class="faccion-card">
+                    <div class="faccion-imagen" style="background-image: url('img/hulk-automaton-in-helldivers-2.webp'); background-size: cover; background-position: center;"></div>
+                    <h3>Automatons</h3>
+                    <p>Máquinas de guerra altamente tecnológicas que buscan la supremacía robótica. Enemigos formidables con tácticas coordinadas y devastadoras.</p>
+                </div>
+                <div class="faccion-card">
+                    <div class="faccion-imagen" style="background-image: url('img/SVu8gfEsv6goQy4QmkFgmi.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>Iluminados</h3>
+                    <p>Seres psíquicos ancestrales con poderes sobrenaturales. Representan una amenaza mística y desconocida para toda la civilización.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estratagemas" class="estratagemas-section">
+            <h2>Estratagemas de uso general</h2>
+            <div class="estratagemas-container">
+                <div class="estratagema-card">
+                    <img src="img/500kg.jpg" alt="Aguila 500KG" style="width: 100%; height: auto; display: block; margin-bottom: 1rem; border-radius: 4px;">
+                    <h3>Aguila 500KG</h3>
+                    <p>Bombardeo aguila de 500KG , una de las estratagemas más efectivas y versátiles.</p>
+                </div>
+                <div class="estratagema-card">
+                    <img src="img/CanonTurretGif.gif" alt="Torretas Automáticas" style="width: 100%; height: auto; display: block; margin-bottom: 1rem; border-radius: 4px;">
+                    <h3>Torretas Automáticas</h3>
+                    <p>Sistemas de defensa autónomos que protegen tu posición de ataques enemigos.</p>
+                </div>
+                <div class="estratagema-card">
+                    <img src="img/laser.omg.jpg.webp" alt="Láser Orbital" style="width: 100%; height: auto; display: block; margin-bottom: 1rem; border-radius: 4px;">
+                    <h3>Láser Orbital</h3>
+                    <p>Un potente laser probeniente del destructor del helldiver con la suficiente potencia para destruir objetivos de alto valor.</p>
+                </div>
+                <div class="estratagema-card">
+                    <img src="img/AXFLAM75.jpg" alt="AX/FLAM-75" style="width: 100%; height: auto; display: block; margin-bottom: 1rem; border-radius: 4px;">
+                    <h3>AX/FLAM-75</h3>
+                    <p>Perro Guardian capas de expulsar fuego a sus enemigos aturdiendo y teniendo PEN pesada.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contacto" class="contacto-section">
+            <h2>Alístate por la Democracia</h2>
+            <p>¿Estás listo para defender la Súper Tierra? Únete a Helldivers 2 y lucha por la libertad.</p>
+           
+        </section>
+
+        <section id="consejos_veteranos" class="consejos-veteranos-section">
+            <h2>Manual de Supervivencia para Nuevos Reclutas</h2>
+            <p>Como nuevo recluta de la Súper Tierra, es fundamental que comprendas la naturaleza de nuestros enemigos. Conocer sus patrones de ataque, fortalezas y debilidades no solo aumentará tu probabilidad de supervivencia, sino que también te permitirá contribuir efectivamente a la victoria de tu escuadrón. La ignorancia en el campo de batalla es sinónimo de muerte.</p>
+            
+            <div class="filtros-busqueda">
+                <div class="filtros">
+                    <button class="filtro-btn active" data-filter="todos">Todos</button>
+                    <button class="filtro-btn" data-filter="favoritos">Favoritos</button>
+                    <button class="filtro-btn" data-filter="terminidos">Terminidos</button>
+                    <button class="filtro-btn" data-filter="automatas">Autómatas</button>
+                    <button class="filtro-btn" data-filter="iluminados">Iluminados</button>
+                </div>
+                <input type="text" id="buscador-consejos" class="buscador-texto" placeholder="Buscar palabras clave...">
+            </div>
+
+            <div id="consejos_cajita" class="consejos-cajita"></div>
+
+            <div class="agregar-consejo-form">
+                <h3>Comparte tu Consejo</h3>
+                <form id="formulario-consejo">
+                    <div class="form-group">
+                        <label for="consejo-nombre">Nombre in game:</label>
+                        <input type="text" id="consejo-nombre" name="consejo-nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consejo-autor">Autor:</label>
+                        <input type="text" id="consejo-autor" name="consejo-autor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consejo-faccion">Facción:</label>
+                        <select id="consejo-faccion" name="consejo-faccion" required>
+                            <option value="">Seleccionar facción</option>
+                            <option value="terminidos">Terminidos</option>
+                            <option value="automatas">Autómatas</option>
+                            <option value="iluminados">Iluminados</option>
+                            <option value="general">General</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="consejo-contenido">Tu Consejo:</label>
+                        <textarea id="consejo-contenido" name="consejo-contenido" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-cta">Agregar Consejo</button>
+                </form>
+            </div>
+        </section>
+
+    <script>
+        const FAVORITOS_KEY = 'helldiversFavoritos';
+        // Guardado separado para consejos enviados por usuarios
+        const USUARIOS_CONSEJOS_KEY = 'helldiversUserConsejos_v1';
+
+        // Array de consejos
+        const Consejos = [
+            {
+                id: 'c1',
+                nombreIngame: "Super-Soldado",
+                autor: "Sargento Mayor",
+                faccion: "general",
+                consejo: "Mantén la cohesión de escuadra. Un escuadrón desunido es un escuadrón muerto. Comunica constantemente con tus compañeros."
+            },
+            {
+                id: 'c2',
+                nombreIngame: "Cazador de Terminidos",
+                autor: "Teniente Combate",
+                faccion: "terminidos",
+                consejo: "Los Terminidos viajan en números masivos. Usa estratagemas de área como el Cañón Orbital para máxima eficiencia. Nunca estés solo."
+            },
+            {
+                id: 'c3',
+                nombreIngame: "Exterminador",
+                autor: "Capitán Táctica",
+                faccion: "automatas",
+                consejo: "Los Autómatas son coordinados y letales. Destruye sus nodos de comunicación primero para desorganizar sus ofensivas tácticas."
+            }
+        ];
+
+        // Cargar consejos de usuarios desde un storage separado
+        function cargarConsejosUsuarios() {
+            const guardado = localStorage.getItem(USUARIOS_CONSEJOS_KEY);
+            if (!guardado) return [];
+            try {
+                const data = JSON.parse(guardado);
+                return Array.isArray(data) ? data : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function guardarConsejosUsuarios(lista) {
+            try {
+                localStorage.setItem(USUARIOS_CONSEJOS_KEY, JSON.stringify(lista));
+            } catch (e) {
+                // si falla el guardado, intentamos limpiar y volver a intentar
+                try { localStorage.removeItem(USUARIOS_CONSEJOS_KEY); } catch (err) {}
+            }
+        }
+
+        let filtroSeleccionado = 'todos';
+
+        function cargarFavoritos() {
+            const guardado = localStorage.getItem(FAVORITOS_KEY);
+            if (!guardado) {
+                return { list: [] };
+            }
+            try {
+                const data = JSON.parse(guardado);
+                return data && typeof data === 'object' ? data : { list: [] };
+            } catch (error) {
+                return { list: [] };
+            }
+        }
+
+        function guardarFavoritos(data) {
+            localStorage.setItem(FAVORITOS_KEY, JSON.stringify(data));
+        }
+
+        function mostrarConsejos() {
+            const cajaConsejos = document.getElementById('consejos_cajita');
+            cajaConsejos.innerHTML = '';
+            const busqueda = document.getElementById('buscador-consejos').value.trim().toLowerCase();
+            const favoritosData = cargarFavoritos();
+            const favoritos = favoritosData.list;
+
+            const consejosFiltrados = Consejos.filter((consejo) => {
+                const textoCompleto = `${consejo.nombreIngame} ${consejo.autor} ${consejo.faccion} ${consejo.consejo}`.toLowerCase();
+                const coincideBusqueda = !busqueda || textoCompleto.includes(busqueda);
+                const coincideFiltro =
+                    filtroSeleccionado === 'todos' ||
+                    (filtroSeleccionado === 'favoritos' && favoritos.includes(consejo.id)) ||
+                    (filtroSeleccionado === 'terminidos' && consejo.faccion === 'terminidos') ||
+                    (filtroSeleccionado === 'automatas' && consejo.faccion === 'automatas') ||
+                    (filtroSeleccionado === 'iluminados' && consejo.faccion === 'iluminados');
+
+                return coincideBusqueda && coincideFiltro;
+            });
+
+            if (consejosFiltrados.length === 0) {
+                cajaConsejos.innerHTML = '<p class="sin-consejos">No hay consejos que coincidan con el filtro.</p>';
+                return;
+            }
+
+            consejosFiltrados.forEach((consejo) => {
+                const esFavorito = favoritos.includes(consejo.id);
+                const consejoDiv = document.createElement('div');
+                consejoDiv.classList.add('consejo-item', `faccion-${consejo.faccion}`);
+                consejoDiv.innerHTML = `
+                    <div class="consejo-header">
+                        <div>
+                            <h4>${consejo.nombreIngame}</h4>
+                            <span class="consejo-autor">por ${consejo.autor}</span>
+                        </div>
+                        <div class="favorite-actions">
+                            <button type="button" class="favorite-btn${esFavorito ? ' favorito-activo' : ''}" data-id="${consejo.id}" aria-label="Marcar favorito">♥</button>
+                            <span class="favorite-counter" aria-label="Contador de favoritos">${esFavorito ? '1' : '0'}</span>
+                        </div>
+                    </div>
+                    <p class="consejo-faccion">Facción: ${consejo.faccion.charAt(0).toUpperCase() + consejo.faccion.slice(1)}</p>
+                    <p class="consejo-contenido">${consejo.consejo}</p>
+                `;
+                cajaConsejos.appendChild(consejoDiv);
+            });
+        }
+
+        function actualizarBotonesFiltro() {
+            document.querySelectorAll('.filtro-btn').forEach((btn) => {
+                btn.classList.toggle('active', btn.dataset.filter === filtroSeleccionado);
+            });
+        }
+
+        function cambiarFiltro(nuevoFiltro) {
+            filtroSeleccionado = nuevoFiltro;
+            actualizarBotonesFiltro();
+            mostrarConsejos();
+        }
+
+        // Permite múltiples favoritos. Cada consejo puede tener como máximo 1 corazón por usuario.
+        function toggleFavorite(id) {
+            const favoritosData = cargarFavoritos();
+            favoritosData.list = favoritosData.list || [];
+            const yaFavorito = favoritosData.list.includes(id);
+
+            if (yaFavorito) {
+                // quitar favorito
+                favoritosData.list = favoritosData.list.filter((item) => item !== id);
+            } else {
+                // añadir favorito
+                favoritosData.list.push(id);
+            }
+
+            guardarFavoritos(favoritosData);
+            mostrarConsejos();
+        }
+
+        document.getElementById('consejos_cajita').addEventListener('click', (event) => {
+            const boton = event.target.closest('.favorite-btn');
+            if (!boton) return;
+            toggleFavorite(boton.dataset.id);
+        });
+
+        document.querySelectorAll('.filtro-btn').forEach((btn) => {
+            btn.addEventListener('click', () => cambiarFiltro(btn.dataset.filter));
+        });
+
+        document.getElementById('buscador-consejos').addEventListener('input', mostrarConsejos);
+
+        document.getElementById('formulario-consejo').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nuevoConsejo = {
+                id: `consejo-${Date.now()}`,
+                nombreIngame: document.getElementById('consejo-nombre').value,
+                autor: document.getElementById('consejo-autor').value,
+                faccion: document.getElementById('consejo-faccion').value,
+                consejo: document.getElementById('consejo-contenido').value
+            };
+
+            // Guardar en array local de consejos y en storage separado para usuarios
+            Consejos.push(nuevoConsejo);
+            mostrarConsejos();
+            this.reset();
+            document.getElementById('consejo-nombre').focus();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Al cargar, incorporar consejos de usuarios guardados
+            const usuarios = cargarConsejosUsuarios();
+            usuarios.forEach((c) => {
+                if (!Consejos.find((existing) => existing.id === c.id)) {
+                    Consejos.push(c);
+                }
+            });
+
+            // asegurar estructura de favoritos
+            const favoritosData = cargarFavoritos();
+            favoritosData.list = favoritosData.list || [];
+            guardarFavoritos(favoritosData);
+            actualizarBotonesFiltro();
+            mostrarConsejos();
+        });
+    </script>
+
+
+</body>
+
+</html>
+    
